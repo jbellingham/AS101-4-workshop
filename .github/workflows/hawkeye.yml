@@ -10,4 +10,5 @@ jobs:
       - options: -v /__w/as101-4-workshop/as101-4-workshop:/target
     steps:
       - uses: actions/checkout@v2
-      - run: hawkeye scan --target web/
+      - run: |
+          hawkeye scan --target web/
